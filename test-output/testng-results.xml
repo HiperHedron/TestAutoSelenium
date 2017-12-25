@@ -1,37 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22511" started-at="2017-12-25T01:57:31Z" finished-at="2017-12-25T01:57:53Z">
+  <suite name="Suite" duration-ms="46047" started-at="2017-12-25T16:43:59Z" finished-at="2017-12-25T16:44:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22511" started-at="2017-12-25T01:57:31Z" finished-at="2017-12-25T01:57:53Z">
+    <test name="Test" duration-ms="46047" started-at="2017-12-25T16:43:59Z" finished-at="2017-12-25T16:44:45Z">
       <class name="com.entry6.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="setUp" is-config="true" duration-ms="5780" started-at="2017-12-25T02:57:31Z" finished-at="2017-12-25T02:57:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="setUp" is-config="true" duration-ms="5466" started-at="2017-12-25T17:44:05Z" finished-at="2017-12-25T17:44:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickObjects()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="clickObjects" duration-ms="8048" started-at="2017-12-25T02:57:37Z" finished-at="2017-12-25T02:57:45Z">
+        <test-method status="PASS" signature="czyToJestHomePage()[pri:2, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="czyToJestHomePage" duration-ms="11907" started-at="2017-12-25T17:44:11Z" finished-at="2017-12-25T17:44:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickObjects -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="tearDown" is-config="true" duration-ms="668" started-at="2017-12-25T02:57:45Z" finished-at="2017-12-25T02:57:45Z">
+        </test-method> <!-- czyToJestHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="tearDown" is-config="true" duration-ms="615" started-at="2017-12-25T17:44:22Z" finished-at="2017-12-25T17:44:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="setUp" is-config="true" duration-ms="5262" started-at="2017-12-25T02:57:45Z" finished-at="2017-12-25T02:57:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="setUp" is-config="true" duration-ms="5355" started-at="2017-12-25T17:44:29Z" finished-at="2017-12-25T17:44:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginLabel()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="verifyLoginLabel" duration-ms="2110" started-at="2017-12-25T02:57:51Z" finished-at="2017-12-25T02:57:53Z">
+        <test-method status="PASS" signature="przejdzDoObiektowIWrocHFB()[pri:3, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="przejdzDoObiektowIWrocHFB" duration-ms="4389" started-at="2017-12-25T17:44:34Z" finished-at="2017-12-25T17:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginLabel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@1794d431]" name="tearDown" is-config="true" duration-ms="623" started-at="2017-12-25T02:57:53Z" finished-at="2017-12-25T02:57:53Z">
+        </test-method> <!-- przejdzDoObiektowIWrocHFB -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.HomePageTest@13deb50e]" name="tearDown" is-config="true" duration-ms="644" started-at="2017-12-25T17:44:38Z" finished-at="2017-12-25T17:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.entry6.qa.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.entry6.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="setUp" is-config="true" duration-ms="5276" started-at="2017-12-25T17:43:59Z" finished-at="2017-12-25T17:44:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="loginPageTitleTest" duration-ms="11" started-at="2017-12-25T17:44:05Z" finished-at="2017-12-25T17:44:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="tearDown" is-config="true" duration-ms="588" started-at="2017-12-25T17:44:05Z" finished-at="2017-12-25T17:44:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="setUp" is-config="true" duration-ms="4958" started-at="2017-12-25T17:44:23Z" finished-at="2017-12-25T17:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="headerTest()[pri:2, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="headerTest" duration-ms="65" started-at="2017-12-25T17:44:28Z" finished-at="2017-12-25T17:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="tearDown" is-config="true" duration-ms="593" started-at="2017-12-25T17:44:28Z" finished-at="2017-12-25T17:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="setUp" is-config="true" duration-ms="5136" started-at="2017-12-25T17:44:39Z" finished-at="2017-12-25T17:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="loginTest" duration-ms="416" started-at="2017-12-25T17:44:44Z" finished-at="2017-12-25T17:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.entry6.qa.testcases.LoginPageTest@239963d8]" name="tearDown" is-config="true" duration-ms="596" started-at="2017-12-25T17:44:45Z" finished-at="2017-12-25T17:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.entry6.qa.testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

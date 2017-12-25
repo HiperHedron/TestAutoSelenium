@@ -6,9 +6,12 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 import com.entry6.qa.util.TestUtil;
 
@@ -16,6 +19,7 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static Wait<WebDriver> wait;
 	
 	public TestBase() {
 		
@@ -47,6 +51,11 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		
+		wait = new FluentWait<WebDriver>(driver)
+			   .withTimeout(TestUtil.FLUENT_WAIT, TimeUnit.SECONDS)
+			   .pollingEvery(TestUtil.FLUENT_POLL, TimeUnit.MILLISECONDS)
+			   .ignoring(NoSuchElementException.class);
 		
 		driver.get(prop.getProperty("url"));
 		

@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.entry6.qa.base.TestBase;
+import com.entry6.qa.util.DMSLoaders;
 
 public class LoginPage extends TestBase {
 	
@@ -44,6 +45,7 @@ public class LoginPage extends TestBase {
 		loginform_login.sendKeys(un);
 		loginform_password.sendKeys(pwd);
 		loginBTN.click();
+		DMSLoaders.isWindowLoaderInvisible();
 		return new HomePage();
 	}
 	
@@ -52,6 +54,7 @@ public class LoginPage extends TestBase {
 		loginform_login.sendKeys(prop.getProperty("username"));
 		loginform_password.sendKeys(prop.getProperty("userpassword"));
 		loginBTN.click();
+		DMSLoaders.isWindowLoaderInvisible();
 		return new HomePage();
 	}
 	

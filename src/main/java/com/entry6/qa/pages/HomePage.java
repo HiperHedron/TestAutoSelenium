@@ -1,10 +1,14 @@
 package com.entry6.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.entry6.qa.base.TestBase;
+import com.entry6.qa.pages.obiekty.ObiektyPage;
+import com.entry6.qa.util.DMSLoaders;
+import com.entry6.qa.util.HFindBy;
 
 public class HomePage extends TestBase{
 	
@@ -13,30 +17,38 @@ public class HomePage extends TestBase{
 	}
 	
 	@FindBy(id = "userLogin")
-	private WebElement usernameLabel;
+	private WebElement nazwaZalogowanegoUzytkownika;
 	
 	@FindBy(id = "icon_dmsObjects")
-	private WebElement icon_dmsObjects;
+	private WebElement ikonaObiekty;
 	
 	@FindBy(className = "header")
 	private WebElement header;
 	
+	@FindBy(tagName = "html")
+	private WebElement htmlTag;
+	
 	public String getUsernameLabel() {
-		return usernameLabel.getText();
+		return nazwaZalogowanegoUzytkownika.getText();
 	}
 	
 	public String getHeaderText() {
 		return header.getText();
 	}
 	
-	public void clickIcon_Obiekty() {
-		icon_dmsObjects.click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public boolean isThisAHomePage() {
+		String classname = HFindBy.findByPresence(By.tagName("html")).getAttribute("class");
+		boolean bool = classname.equals("homePage")?true:false;
+		
+		System.out.println(classname);
+		return bool;
+	}
+	
+	
+	public ObiektyPage przejdzDo_Obiekty() {
+		ikonaObiekty.click();
+		DMSLoaders.isWindowLoaderInvisible();
+		return new ObiektyPage();
 	}
 	
 	
