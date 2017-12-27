@@ -58,7 +58,7 @@ public class TestBase {
 			driver = new ChromeDriver();
 		}else if(browserName.equals("ff")) {
 			if(System.getProperty("os.name").equals("Linux")) {
-				System.setProperty("webdriver.chrome.driver", "/usr/local/share/geckodriver");
+				System.setProperty("webdriver.gecko.driver", "/usr/local/share/geckodriver");
 
 			}else {
 				System.setProperty("webdriver.gecko.driver", "C:/Users/Lux/eclispe-oxygen-workspace/AutoTest/webdrivers/geckodriver.exe");
